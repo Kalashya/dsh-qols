@@ -1,0 +1,84 @@
+{
+  "name": "dsh-qols",
+  "version": "0.1.0",
+  "description": "Quality-of-life extras for DeepSeek Harness: an Auto model that picks the cheapest model and effort for every task, session cost, and Prompt Studio for skills, commands, rules, agent presets and the global AGENTS.md.",
+  "icon": "./icon.svg",
+  "type": "module",
+  "main": "./index.js",
+  "sideEffects": [
+    "./client.js"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Kalash",
+    "url": "https://github.com/Kalashya"
+  },
+  "homepage": "https://github.com/Kalashya/dsh-qols#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kalashya/dsh-qols.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kalashya/dsh-qols/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "harness-plugin",
+    "qol",
+    "prompt-studio",
+    "model-router"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "features",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "test",
+    "suites",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "verify": "node scripts/verify.mjs",
+    "bundle:check": "node scripts/bundle-check.mjs",
+    "pack:check": "npm pack --dry-run",
+    "market:index": "node scripts/build-index.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2 <0.3.0-0",
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.19.0"
+  }
+}

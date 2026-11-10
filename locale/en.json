@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "QoLs",
+    "description": "Quality-of-life extras for DeepSeek Harness: an Auto model that picks the cheapest route for each task, session cost, and Prompt Studio for skills, commands, rules, agent presets and the global AGENTS.md."
+  }
+}

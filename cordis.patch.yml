@@ -1,0 +1,4 @@
+# QoLs bundle layer. Only this bundle's own row.
+- insert:
+    - id: qols
+      name: 'dsh-qols'

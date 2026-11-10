@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "title": {
+    "en": "QoLs",
+    "ru": "QoLs"
+  },
+  "description": {
+    "en": "Quality-of-life extras for DeepSeek Harness.",
+    "ru": "Мелкие удобства для DeepSeek Harness."
+  },
+  "metadata": {
+    "categories": {
+      "interface": {
+        "title": {
+          "en": "Interface",
+          "ru": "Интерфейс"
+        }
+      },
+      "models": {
+        "title": {
+          "en": "Models",
+          "ru": "Модели"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-qols",
+      "title": {
+        "en": "QoLs",
+        "ru": "QoLs"
+      },
+      "description": {
+        "en": "Quality-of-life extras for DeepSeek Harness: an Auto model that picks the cheapest model and effort for every task, session cost, and Prompt Studio for skills, commands, rules, agent presets and the global AGENTS.md.",
+        "ru": "Auto-модель, которая выбирает модель и уровень рассуждений под задачу, стоимость сессии и Prompt Studio для навыков, команд, правил, пресетов агентов и глобального AGENTS.md."
+      },
+      "icon": "../icon.svg",
+      "author": "Kalash",
+      "homepage": "https://github.com/Kalashya/dsh-qols#readme",
+      "repository": {
+        "url": "https://github.com/Kalashya/dsh-qols"
+      },
+      "metadata": {
+        "category": "models",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek",
+          "deepseek-harness",
+          "harness-plugin",
+          "qol",
+          "prompt-studio",
+          "model-router"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794315103,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/Kalashya/dsh-qols",
+            "commit": "cb1a467c015e916b325118f34c4fb82f85e306c8"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}
