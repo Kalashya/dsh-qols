@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-10
+
 ### Liked plugins credits its authors
 
 - **Repository links** — every row in the **Liked plugins** settings section now links to that

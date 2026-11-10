@@ -1,6 +1,6 @@
 {
   "name": "dsh-qols",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Quality-of-life extras for DeepSeek Harness: an Auto model that picks the cheapest model and effort for every task, session cost, and Prompt Studio for skills, commands, rules, agent presets and the global AGENTS.md.",
   "icon": "./icon.svg",
   "type": "module",

@@ -29,7 +29,7 @@ dsh plugin --profile desktop add github:Kalashya/dsh-qols
 dsh plugin --profile desktop add dsh-qols
 
 # from a release tarball
-dsh plugin --profile desktop add https://github.com/Kalashya/dsh-qols/releases/download/v0.1.0/dsh-qols-0.1.0.tgz
+dsh plugin --profile desktop add https://github.com/Kalashya/dsh-qols/releases/download/1.0.0/dsh-qols-1.0.0.tgz
 ```
 
 Git and tarball installs do not need the package to be published on npm. Restart DSH afterwards —

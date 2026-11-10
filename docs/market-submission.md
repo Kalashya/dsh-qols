@@ -18,7 +18,7 @@ There are two independent steps, and they can be done in either order.
 - [x] No build step: the shipped files are the sources, so the market's
       build-script block does not apply.
 - [x] `LICENSE`, `README.md`, `CHANGELOG.md`, tests that run with `npm test`.
-- [ ] The repository is pushed and tagged (`v0.1.0`), so a release tarball exists.
+- [ ] The repository is pushed and tagged (`1.0.0`; `v1.0.0` also works), so a release tarball exists.
 - [ ] Optional: published on npm (`dsh-qols`), which the market prefers.
 
 ## 2. Open the pull request to the catalogue
@@ -68,6 +68,6 @@ is either an https URL, a relative path on the index's own origin, or an inline 
 | tests pass | `npm test` |
 | only intended files ship | `npm pack --dry-run` |
 | version bumped and changelog updated | `CHANGELOG.md` |
-| tarball installs into a clean profile | `dsh plugin --profile test add ./dsh-qols-0.1.0.tgz` |
+| tarball installs into a clean profile | `dsh plugin --profile test add ./dsh-qols-1.0.0.tgz` |
 | the profile composes the plugin | `dsh --profile test --dump-config` shows the `qols` row |
 | no secrets or local paths in the repo | `git grep -n -I -E 'C:[\\/]Users|/Users/|/home/|AppData|KALASH' -- ':!docs/market-submission.md'` |
