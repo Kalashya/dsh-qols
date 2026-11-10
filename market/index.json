@@ -56,12 +56,12 @@
       },
       "versions": [
         {
-          "version": "0.1.0",
-          "publishTimestamp": 1794316391,
+          "version": "1.0.0",
+          "publishTimestamp": 1794317729,
           "source": {
             "type": "git",
             "url": "https://github.com/Kalashya/dsh-qols",
-            "commit": "380775d24e80ec4f9177457dbc67ef5d646a1759"
+            "commit": "00a7a12747a2263498d681943efd5e545c1f2adf"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
