@@ -12,3 +12,19 @@ AGENTS.local.md
 Thumbs.db
 .idea/
 .vscode/
+.history/
+
+# Local build, coverage and editor artifacts
+coverage/
+.nyc_output/
+dist/
+build/
+out/
+*.tsbuildinfo
+.eslintcache
+.cache/
+*.bak
+*.orig
+*.rej
+*.local
+*.bundle
