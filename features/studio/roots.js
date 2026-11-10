@@ -60,11 +60,12 @@ export function decodeWorkspaceName(name) {
   const decodeToken = (token) =>
     token.replace(/~([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
 
+  const windows = process.platform === 'win32'
   const walk = (index, current) => {
     if (index >= tokens.length) return existsSync(current) ? current : null
     if (current === null) {
-      if (index === 0 && /^[A-Za-z]$/.test(tokens[0])) return walk(1, `${tokens[0]}:\\`)
-      return walk(1, tokens[0])
+      if (windows && /^[A-Za-z]$/.test(tokens[0])) return walk(1, `${tokens[0]}:\\`)
+      return walk(windows ? 1 : 0, windows ? tokens[0] : '/')
     }
     for (let take = Math.min(4, tokens.length - index); take >= 1; take -= 1) {
       const next = join(current, tokens.slice(index, index + take).map(decodeToken).join('-'))
