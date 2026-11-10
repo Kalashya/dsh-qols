@@ -57,11 +57,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1794315103,
+          "publishTimestamp": 1794316391,
           "source": {
             "type": "git",
             "url": "https://github.com/Kalashya/dsh-qols",
-            "commit": "cb1a467c015e916b325118f34c4fb82f85e306c8"
+            "commit": "380775d24e80ec4f9177457dbc67ef5d646a1759"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2 <0.3.0-0"
